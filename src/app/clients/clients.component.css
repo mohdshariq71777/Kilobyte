@@ -1,0 +1,24 @@
+input[type="text"],
+select {
+  font-size: 0.8rem;
+}
+.myTable {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.tblRes {
+  box-shadow: rgba(150, 195, 173, 0.3) 0px 1px 6px;
+  white-space: pre;
+}
+.myTable th {
+  color: #a2aab3;
+  font-size: 0.8rem;
+}
+.mw90 {
+  min-width: 90vw;
+}
+.myTable {
+  font-size: 0.8rem;
+}
+.font7 {
+  font-size: 0.75rem;
+}

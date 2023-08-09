@@ -1,0 +1,13 @@
+.left-menu {
+  background: #323acd;
+  min-height: 100vh;
+}
+.icon {
+  text-align: center;
+  padding: 16px;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  background: #8487e0;
+}
