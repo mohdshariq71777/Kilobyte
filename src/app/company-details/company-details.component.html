@@ -1,0 +1,59 @@
+<div class="d-flex w-100">
+  <app-left-menu></app-left-menu>
+  <div class="page-content w-100">
+    <section class="py-3">
+      <header>
+        <div class="container mw90">
+          <h5 class="mb-0">Demo</h5>
+        </div>
+      </header>
+    </section>
+    <section class="bg-light">
+      <div class="container mw90">
+        <div class="row gy-sm-0 gy-2 py-2 align-items-center">
+          <div class="col-sm-10"><label class="bg-white rounded-circle py-2 px-3 text-success">All</label></div>
+          <div class="col-sm-2"><select name="" id="" class="border-0 form-select">
+              <option value="" selected="selected" disabled="disabled">All members</option>
+            </select></div>
+        </div>
+      </div>
+
+    </section>
+    <section class="py-3">
+      <div class="container mw90">
+
+        <div class="row gy-2">
+          <div class="col-sm-2" *ngFor="let doc of documents">
+            <div class="card shadow-none">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-sm-12 text-center mb-2">
+                    <button class="btn btn-success btn-sm" *ngIf="doc.status!=='Completed'"
+                      (click)="filePckr.click()">Upload</button>
+                    <button class="btn btn-warning btn-sm" (click)="filePckr.click()"
+                      *ngIf="doc.status=='Completed'">Edit</button>
+                    <input class="hide" type="file" #filePckr (change)="upload(doc._id,$event)">
+                  </div>
+                  <div class="col-sm-12 text-wrap">
+                    <label for="" class="font9 fw-bold">Description :</label>
+                    <label class="font8 ">{{doc.docType}}</label>
+                  </div>
+                  <div class="col-sm-12">
+                    <label for="" class="font9 fw-bold">Document Type :</label>
+                    <label for="" class="font8">{{doc.type}}</label>
+                  </div>
+                  <div class="col-sm-12">
+                    <label for="" class="font9 fw-bold">Status : </label>
+                    <label for="" class="font8"> {{doc.status}}</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </div>
+</div>

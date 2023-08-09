@@ -1,0 +1,21 @@
+section {
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background: #32b7e8;
+  background-size: 100% 100%;
+}
+@media screen and (min-width: 992px) {
+  section {
+    background: url("./../../../assets/images/bg.png");
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    /* background: #365be0; */
+    background-size: 100% 100%;
+  }
+}
+.font9,
+.form-control {
+  font-size: 0.9rem;
+}
